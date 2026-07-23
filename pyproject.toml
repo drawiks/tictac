@@ -4,15 +4,14 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "tictac"
-version = "0.1.0"
+name = "tictac-timer"
+version = "0.1.1"
 description = "a simple timer for your code"
 readme = "README_en.md"
 requires-python = ">=3.8"
 license = "AGPL-3.0-only"
 keywords = ["timer", "performance", "benchmark", "profiling"]
 classifiers = [
-    "License :: OSI Approved :: GNU Affero General Public License v3",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
@@ -38,4 +37,4 @@ Issues = "https://github.com/drawiks/tictac/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["tictac*"]
+include = ["tictac-timer*"]

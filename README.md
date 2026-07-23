@@ -22,7 +22,7 @@
 ## установка
 
 ```
-pip install tictac
+pip install tictac-timer
 ```
 
 ## быстрый старт
