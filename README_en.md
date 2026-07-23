@@ -18,23 +18,22 @@
                             
 ```
 
-
-## установка
+## installation
 
 ```
 pip install tictac-timer
 ```
 
-## быстрый старт
+## quick start
 
 ```python
 from tictac import timer
 import time
 
 # context manager
-with timer("Загрузка данных"):
+with timer("data loading"):
     time.sleep(1.2)
-    # [tictac] Загрузка данных: 1.20 sec
+    # [tictac] data loading: 1.20 sec
 
 # decorator
 @timer
@@ -42,26 +41,26 @@ def heavy_process():
     time.sleep(0.5)
     # [tictac] heavy_process: 0.50 sec
 
-# decorator с параметрами
-@timer("Обработка", unit="ms")
+# decorator with parameters
+@timer("processing", unit="ms")
 def fast_process():
     time.sleep(0.01)
-    # [tictac] Обработка: 10.00 ms
+    # [tictac] processing: 10.00 ms
 ```
 
-## параметры
+## parameters
 
 ```python
 timer(name=None, unit="s", output=None)
 ```
 
-- **name** — label для таймера (по умолчанию имя функции)
-- **unit** — единица измерения: `"s"`, `"ms"`, `"min"`
-- **output** — callback `(msg: str) -> None` (по умолчанию `print`)
+- **name** — timer label (defaults to function name)
+- **unit** — time unit: `"s"`, `"ms"`, `"min"`
+- **output** — callback `(msg: str) -> None` (defaults to `print`)
 
-## примеры
+## examples
 
-### кастомный вывод
+### custom output
 
 ```python
 import logging
@@ -72,7 +71,7 @@ with timer("query", output=log.info):
     db.execute("SELECT ...")
 ```
 
-### несколько таймеров
+### multiple timers
 
 ```python
 with timer("preparation"):
@@ -85,6 +84,6 @@ with timer("processing", unit="ms"):
 # [tictac] processing: 15.00 ms
 ```
 
-## лицензия
+## license
 
 [AGPL-3.0](LICENSE)

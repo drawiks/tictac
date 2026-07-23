@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "tictac-timer"
+version = "0.1.1"
+description = "a simple timer for your code"
+readme = "README_en.md"
+requires-python = ">=3.8"
+license = "AGPL-3.0-only"
+keywords = ["timer", "performance", "benchmark", "profiling"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries"
+]
+
+
+[[project.authors]]
+name = "drawiks"
+email = "drawksr@gmail.com"
+
+
+[project.urls]
+Homepage = "https://github.com/drawiks/tictac"
+Repository = "https://github.com/drawiks/tictac"
+Issues = "https://github.com/drawiks/tictac/issues"
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tictac-timer*"]
