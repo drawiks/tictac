@@ -1,7 +1,7 @@
 <div align="center">
     <h1>⏱️ tictac</h1>
     <img height="20" alt="Python 3.8+" src="https://img.shields.io/badge/python-3.8+-blue">
-    <img height="20" alt="License MIT" src="https://img.shields.io/badge/license-MIT-green">
+    <img height="20" alt="License MIT" src="https://img.shields.io/badge/license-AGPL--v3-orange">
     <img height="20" alt="Status" src="https://img.shields.io/badge/status-stable-brightgreen">
     <p><strong>tictac</strong> - a simple timer for your code</p>
     <blockquote>(─‿‿─)</blockquote>
